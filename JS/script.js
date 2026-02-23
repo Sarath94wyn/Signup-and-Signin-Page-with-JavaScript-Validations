@@ -51,7 +51,7 @@ if (signupForm) {
     localStorage.setItem("userPassword", password);
 
     alert("Signup successful!");
-    window.location.href = "signin.html";
+    window.location.href = "index.html";
   });
 }
 
@@ -68,7 +68,7 @@ if (signinForm) {
       email === localStorage.getItem("userEmail") &&
       password === localStorage.getItem("userPassword")
     ) {
-      window.location.href = "index.html";
+      window.location.href = "landingPage.html";
     } else {
       alert("Invalid credentials");
     }
@@ -81,5 +81,5 @@ function logout() {
 
   alert("You have been logged out successfully!");
 
-  window.location.href = "signin.html";
+  window.location.href = "index.html";
 }
